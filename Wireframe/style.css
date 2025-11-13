@@ -23,6 +23,7 @@ As well as useful links to learn more */
   --space: clamp(6px, 6px + 2vw, 15px);
   --line: 1px solid;
   --container: 1280px;
+  --white: #fff;
 }
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
@@ -101,6 +102,6 @@ footer {
   bottom: 0;
   width: 100%;
   text-align: center;
-  background-color: white;
+  background-color: var(--white);
   border-top: 1px solid black;
 }
