@@ -23,6 +23,7 @@ As well as useful links to learn more */
   --space: clamp(6px, 6px + 2vw, 15px);
   --line: 1px solid;
   --container: 1280px;
+  --white: #fff;
 }
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
@@ -35,6 +36,7 @@ a {
   padding: var(--space);
   border: var(--line);
   max-width: fit-content;
+  max-height: fit-content;
 }
 img,
 svg {
@@ -67,7 +69,9 @@ main {
   gap: var(--space);
   > *:first-child {
     grid-column: span 2;
-  }
+  };
+  width: 70%;
+  padding-top: 2%;
 }
 /* ====== Article Layout ====== 
 Setting the rules for how elements are placed in the article. 
@@ -86,4 +90,18 @@ article {
   > img {
     grid-column: span 3;
   }
+}
+
+.center {
+  text-align: center;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: var(--white);
+  border-top: 1px solid black;
 }
